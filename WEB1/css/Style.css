@@ -165,4 +165,9 @@ section {
   .main-content {
     margin-top: 13rem;
   }
+  }
+	.main-title{
+		font-size: 2rem;
+
+	}
 }
