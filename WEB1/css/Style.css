@@ -13,9 +13,6 @@
   font-style: normal;
   font-display: swap;
 }
-.bold {
-  font-family: 'ProximaNova-Bold', sans-serif;
-}
 /* Colors */
 /* Basic setting */
 html {
@@ -57,7 +54,7 @@ section {
 }
 .main-content h1 {
   font-family: 'ProximaNova-Bold', sans-serif;
-  font-size: 3rem;
+  font-size: 2.5rem;
   line-height: 1.5;
   text-transform: uppercase;
 }
@@ -140,6 +137,56 @@ section {
   height: 7rem;
   line-height: 7rem;
 }
+.section-header {
+  text-align: center;
+  font-family: 'ProximaNova-Bold', sans-serif;
+  font-size: 3rem;
+  margin-bottom: 10rem;
+}
+.slick-active {
+  outline: none;
+}
+.features-block {
+  text-align: center;
+}
+.features-block p {
+  font-size: 1.5rem;
+}
+.features-block h3 {
+  font-family: 'ProximaNova-Bold', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+.features-img {
+  height: 8rem;
+  margin-bottom: 3rem;
+}
+.features-img img {
+  display: block;
+  margin: 0 auto;
+}
+.prev {
+  position: absolute;
+  z-index: 99;
+  top: 50%;
+  left: 0;
+  border: none;
+  width: 2rem;
+  height: 2rem;
+  background: url(../img/features/Left-arrov.png) center no-repeat;
+  background-size: 70%;
+}
+.next {
+  position: absolute;
+  z-index: 99;
+  top: 50%;
+  right: 0;
+  border: none;
+  width: 2rem;
+  height: 2rem;
+  background: url(../img/features/Right-arrow.png) center no-repeat;
+  background-size: 70%;
+}
 @media (max-width: 991px) {
   .main {
     background-position: top right;
@@ -156,6 +203,9 @@ section {
   }
 }
 @media (max-width: 575px) {
+  .main {
+    text-align: center;
+  }
   .header {
     text-align: center;
   }
@@ -165,8 +215,10 @@ section {
   .main-content {
     margin-top: 13rem;
   }
-	.main-title{
-		font-size: 2rem;
-
-	}
+  .main-title {
+    font-size: 2rem;
+  }
+  .button {
+    height: 5rem;
+  }
 }

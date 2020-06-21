@@ -17,6 +17,8 @@
 
     <!-- Custom styles for this template -->
     <link href="css/Style.css" rel="stylesheet">
+     <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
 
   </head>
 
@@ -76,5 +78,93 @@
     		</div>
     	</div>
     </main>
+
+
+    <section class="features">
+    	<div class="container">
+    		<h2 class="section-header">
+    			Премущество роботы с нами
+    		</h2>
+    		<div class="features-slider">
+    			<div class="features-block">
+    			<div class="features-img"><img src="img/features/coin.png"  alt="Платите по факту" width="60"></div>
+    			<h3>Платите по факту</h3>
+    			<p>Вы оплачиваете выполненные работы только после их выполнения. Никаких скрытых доплат и промежуточных платежей.
+</p>
+    		</div>
+    		<div class="features-block">
+    			<div class="features-img"><img src="img/features/folder.png" alt="Заключаем договор"></div>
+    			<h3>Заключаем договор</h3>
+    			<p>Перед началом работ заключаем договор на юридическое лицо. Вы можете быть уверены, что все обязательства будут выполнены.</p>
+    		</div>
+    		<div class="features-block">
+    			<div class="features-img"><img src="img/features/clock.png" alt="Точно в срок"></div>
+    			<h3>Точно в срок</h3>
+    			<p>Работаем строго по установленным срокам, которые прописаны 
+в договоре. Если не успеваем, Вы платите меньше</p>
+    		</div>
+    		<div class="features-block">
+    			<div class="features-img"><img src="img/features/bank-pig.png" alt="Экономите на материалах"></div>
+    			<h3>Экономите на материалах</h3>
+    			<p>Мы являемся структурным подразделением компании поставщика строительных смесей gicema.ru  и даём Вам самые 
+выгодные цены.</p>
+    		</div>
+    		</div>
+    	</div>
+    </section>
+    
+<link rel="stylesheet"  href="slick/slick.css"/>
+<link rel="stylesheet"  href="slick/slick-theme.css"/>
+  
+
+
+ 
+ 
+  <script src="slick/slick.min.js"></script>
+
+  <script>
+  	$(document).ready(function(){
+  $('.features-slider').slick({
+   infinite: true,
+  slidesToShow: 4,
+  slidesToScroll: 3,
+  responsive: [
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true,
+        prevArrow: '<button class="prev"></button>',
+        nextArrow:'<button class="next"></button>',
+       
+      }
+    },
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+          prevArrow: '<button class="prev"></button>',
+        nextArrow:'<button class="next"></button>',
+      }
+    },
+    {
+      breakpoint: 582,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+          prevArrow: '<button class="prev"></button>',
+        nextArrow:'<button class="next"></button>',
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+  });
+});
+  </script>
+
   </body>
 </html>
