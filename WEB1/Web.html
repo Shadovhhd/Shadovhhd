@@ -40,7 +40,7 @@
     				<div class="col-md-3 col-sm-3 col-xs-12">
     					<div class="wrap">
     						<div class="wrap-block">
-    							<button class="button btn-header">
+    							<button class="button btn-header popup-btn">
     						Получить консультацию
     					</button>
     						</div>
@@ -63,7 +63,7 @@
     						</strong>
     					</div>
     				</div>
-    				<div class="col-xl-4 offset-xl-3 col-lg-5 offset-lg-2 col-md-8 offset-md-2 col-xs-10 offset-xs-1">
+    				<div class="col-xl-4 offset-xl-3 col-lg-5 offset-lg-2 col-md-8 offset-md-2">
     					<div class="main-form">
     						<h2 class="main-form-header">Для расчёта точной стоимости <br><strong>закажите выезд замерщика</strong></h2>
     						<label for="#">Ваше имя</label>
@@ -116,14 +116,45 @@
 <link rel="stylesheet"  href="slick/slick.css"/>
 <link rel="stylesheet"  href="slick/slick-theme.css"/>
   
+<!--Всплывающее окно!-->
+<div class="popup">
+	<div class="popup-dialog">	
+		<div class="popup-content">
+			<button class="popup-close">
+				&times
+			</button>
+			<h4 class="popup-header">Заинтересовало?</h4>
+			<p>Оставте свои контактные даные<br>для связи</p>
+			<div class="main-form">
+				<label for="#">Ваше имя</label>
+    						<input  class="main-form-input" type="text"></input>
+    						<label for="#">Номер телефона</label>
+    						<input class="main-form-input" type="text"></input>
+    						<label for="#">Сообщение</label>
 
+    						<textarea class="main-form-input" rows="3"></textarea>
+    						<button class="main-form-btn button" type="submit">Оставте заявку</button>
 
- 
+			</div>
+		</div>
+   
+	</div>
+</div>
  
   <script src="slick/slick.min.js"></script>
 
   <script>
   	$(document).ready(function(){
+  	$('.popup-btn').on('click', function(event) {
+  		event.preventDefault();
+  		$('.popup').fadeIn();
+  	});	
+    $('.popup-close').on('click', function(event) {
+    	event.preventDefault();
+    	/* Act on the event */
+    	$('.popup').fadeOut();
+    });
+  		
   $('.features-slider').slick({
    infinite: true,
   slidesToShow: 4,
