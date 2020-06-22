@@ -207,7 +207,7 @@ section {
   transform: translateX(-50%);
   background-color: white;
   text-align: center;
-  padding: 2rem 3rem;
+  padding: 2rem -3rem;
 }
 .popup-close {
   position: fixed;
