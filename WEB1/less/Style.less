@@ -19,7 +19,7 @@
 .reg(){
 font-family: 'ProximaNova-Regular', sans-serif;
 }
-.bold{
+.bold(){
 font-family: 'ProximaNova-Bold', sans-serif;
 }
 
@@ -70,7 +70,7 @@ section{
 
 		h1{
 			.bold();
-			font-size: 3rem;
+			font-size: 2.5rem;
 			line-height: 1.5;
 			text-transform: uppercase;
 		}
@@ -159,6 +159,169 @@ section{
 	line-height: 7rem;
 }
 
+.section-header{
+	text-align: center;
+	.bold();
+	font-size: 3rem;
+	margin-bottom:10rem;
+}
+.slick-active{
+	outline: none;
+}
+.features{
+	&-block{
+		text-align: center;
+		p{
+			font-size: 1.5rem;
+
+		}
+		h3{
+			.bold();
+			font-size: 2rem;
+			margin-bottom: 3rem;
+		}
+	}
+	&-img{ 
+		height: 8rem;
+		margin-bottom: 3rem;
+	img{
+		display: block;
+		margin: 0 auto
+
+	}
+}
+}
+.prev{
+	 position: absolute;
+	 z-index: (99);
+    top: 50%;
+    left: 0;
+    border:none;
+    width: 2rem;
+    height: 2rem;
+    background: url(../img/features/Left-arrov.png) center no-repeat;
+    background-size:70%;
+}
+.next{
+	 position: absolute;
+	 z-index: (99);
+    top: 50%;
+    right: 0;
+    border:none;
+    width: 2rem;
+    height: 2rem;
+    background: url(../img/features/Right-arrow.png) center no-repeat;
+    background-size:70%;
+}
+
+/* Оформления всплывющего окна	*/
+.popup{
+	display: none;
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 9;
+	background: rgba(0, 0, 0, 0.5);
+	&-content{
+		position: fixed;
+		left: 50%;
+		top:10%;
+		transform: translateX(-50%);
+		background-color: white;
+		text-align: center;
+		padding: 2rem 1rem;
+		
+		
+	}
+	&-close{
+		position:fixed;
+		right: -2.1rem;
+		top: -1.2rem;
+		border:none;
+		font-size: 3rem;
+		background:none;
+	}
+	h4{
+		.bold();
+		font-weight: 600;
+	}
+	p{
+		font-size: 1.3rem;
+		margin-bottom: -3rem;
+	}
+}
+
+
+
+.prices{
+	background: @icon-color url(../img/back-prices.jpg) center;
+	.section-header_light{
+		color: white;
+		h2{
+			.bold();
+			font-size: 3.6rem;
+		}
+		p{
+			margin-top: 4rem;
+			font-size: 1.5rem;
+		}
+	}
+	&-block{
+		background:white;
+		text-align: center;
+		min-height: 55rem;
+		margin-bottom:4rem;
+		box-shadow:7px 12px 21px 0px rgba(0, 0, 0, 0.17);
+		h4{
+			.bold();
+			font-weight: 500;
+			font-size: 1.6rem;
+			padding: 3rem 1rem;
+		}
+
+		img{
+			width: 250px;
+			height: 170px;
+		}
+		p{
+			font-size: 1.6rem;
+			padding:2rem 0rem;
+			span{
+				.bold();
+				font-weight: 500;
+				font-size: 1.9rem;
+			}
+		}
+		ul{
+			min-height: 15rem;
+			padding: 0px;
+			line-height: 2;
+		}
+		li{
+			list-style-type: none;
+			.bold();
+			font-size: 1.2rem;
+			&:before{
+				content: '';
+				display: inline-block;
+				width: 1rem;
+				height: 1rem;
+				background: url(../img/prices/checked.png) center no-repeat;
+
+				vertical-align: middle;
+				padding:1rem 1rem;
+				
+			}
+		}
+	}
+	button{
+		margin-bottom:2rem;
+	}
+}
 @media(max-width: 991px){
 	.main{
 		background-position: top right;
@@ -175,6 +338,10 @@ section{
 	}
 }
 @media(max-width: 575px){
+	.main{
+	
+		text-align: center;
+	}
 	.header{
 		text-align: center;
 	}
@@ -183,5 +350,15 @@ section{
 	}
 	.main-content{
 		margin-top:13rem;
+	}
+	.main-title{
+		font-size: 2rem;
+
+	}
+	.button{
+		height: 5rem;
+	}
+	.popup-content{
+		width: 300px;
 	}
 }

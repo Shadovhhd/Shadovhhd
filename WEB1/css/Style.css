@@ -225,6 +225,68 @@ section {
   font-size: 1.3rem;
   margin-bottom: -3rem;
 }
+.prices {
+  background: #46b914 url(../img/back-prices.jpg) center;
+}
+.prices .section-header_light {
+  color: white;
+}
+.prices .section-header_light h2 {
+  font-family: 'ProximaNova-Bold', sans-serif;
+  font-size: 3.6rem;
+}
+.prices .section-header_light p {
+  margin-top: 4rem;
+  font-size: 1.5rem;
+}
+.prices-block {
+  background: white;
+  text-align: center;
+  min-height: 55rem;
+  margin-bottom: 4rem;
+  box-shadow: 7px 12px 21px 0px rgba(0, 0, 0, 0.17);
+}
+.prices-block h4 {
+  font-family: 'ProximaNova-Bold', sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+  padding: 3rem 1rem;
+}
+.prices-block img {
+  width: 250px;
+  height: 170px;
+}
+.prices-block p {
+  font-size: 1.6rem;
+  padding: 2rem 0rem;
+}
+.prices-block p span {
+  font-family: 'ProximaNova-Bold', sans-serif;
+  font-weight: 500;
+  font-size: 1.9rem;
+}
+.prices-block ul {
+  min-height: 15rem;
+  padding: 0px;
+  line-height: 2;
+}
+.prices-block li {
+  list-style-type: none;
+  font-family: 'ProximaNova-Bold', sans-serif;
+  font-size: 1.2rem;
+}
+.prices-block li:before {
+  content: '';
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  background: url(../img/prices/checked.png) center no-repeat;
+  vertical-align: middle;
+  padding: 1rem 1rem;
+}
+.prices button {
+  margin-bottom: 2rem;
+}
 @media (max-width: 991px) {
   .main {
     background-position: top right;
