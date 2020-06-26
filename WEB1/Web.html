@@ -169,9 +169,125 @@
     		</div>
     	</div>
     </section>
+
+    <section class="feedback">
+    	<div class="container">
+
+    	<div class="feedback-header">
+    		<h2 class="section-header">
+    			Отзывы
+    		</h2>
+    	</div>
+
+
+    	<div class="feedback-slider">
+
+    		<div class="feedback-slider_item">
+    			<div class="row">
+    				<div class="col-lg-6">
+    					<div class="fotorama" max-width="100%"  data-nav="thumbs">
+    						<img src="img/feedback/1.png" alt="">
+    						<img src="img/feedback/2.png" alt="">
+    						<img src="img/feedback/3.png" alt="">
+    						<img src="img/feedback/4.png" alt="">
+    						<img src="img/feedback/5.png" alt="">
+    					<img src="img/feedback/6.png" alt="">
+    					</div>
+    				</div>
+    				<div class="col-lg-6">
+    									  <p class="feedback-main-p">Объект: г.Москва, Нахимовский проспект д.10</p>
+    <p >Площадь: <strong>357 м2</strong></p>
+    <p>Выполнен за: <strong>10 дней</strong></p>
+    <p>Стоимость: <strong>550 рублей за квадратный метр</strong></p>
+    <p>Особенности:<strong> перепады неровности стен достигали до 6 см</strong></p>
+  <div class="media">
+  <img src="img/feedback/klient.png" class="mr-3 feedback-klient" alt="...">
+  <div class="media-body">
+    <span>Заказчик</span>
+    <h4 class="feedback-klent_name">Нахимов Артем</h4>
+  </div>
+</div>
+
+<div class="feedback-text">
+	<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Выйти использовало текста семь живет!</p>
+</div>
+
+
+    				</div>
+    			</div>
+    		</div>
+    		<div class="feedback-slider_item">
+    			<div class="row">
+    				<div class="col-lg-6">
+    					<div class="fotorama" max-width="100%"  data-nav="thumbs">
+    						<img src="img/feedback/1.png" alt="">
+    						<img src="img/feedback/2.png" alt="">
+    						<img src="img/feedback/3.png" alt="">
+    						<img src="img/feedback/4.png" alt="">
+    						<img src="img/feedback/5.png" alt="">
+    						<img src="img/feedback/6.png" alt="">
+    					</div>
+    				</div>
+    				<div class="col-lg-6">
+    									  <p class="feedback-main-p">Объект: г.Москва, Нахимовский проспект д.10</p>
+    <p >Площадь: <strong>357 м2</strong></p>
+    <p>Выполнен за: <strong>10 дней</strong></p>
+    <p>Стоимость: <strong>550 рублей за квадратный метр</strong></p>
+    <p>Особенности:<strong> перепады неровности стен достигали до 6 см</strong></p>
+    				</div>
+    			</div>
+    		</div>
+    		<div class="feedback-slider_item">
+    			<div class="row">
+    				<div class="col-lg-6">
+    					<div class="fotorama" max-width="100%"  data-nav="thumbs">
+    						<img src="img/feedback/1.png" alt="">
+    						<img src="img/feedback/2.png" alt="">
+    						<img src="img/feedback/3.png" alt="">
+    						<img src="img/feedback/4.png" alt="">
+    						<img src="img/feedback/5.png" alt="">
+    						<img src="img/feedback/6.png" alt="">
+    					</div>
+    				</div>
+    				<div class="col-lg-6">
+    					  <p class="feedback-main-p">Объект: г.Москва, Нахимовский проспект д.10</p>
+    <p >Площадь: <strong>357 м2</strong></p>
+    <p>Выполнен за: <strong>10 дней</strong></p>
+    <p>Стоимость: <strong>550 рублей за квадратный метр</strong></p>
+    <p>Особенности:<strong> перепады неровности стен достигали до 6 см</strong></p>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+<div class="feedback-form">
+	<div class="row">
+		<div class="col-lg-8 offset-lg-2 col-md-6 offset-md-4">
+			<div class="feedback-form main-form">
+				<h3>Хотите так же? Оставьте Ваши контактные данные</h3>
+				<div class="row">
+					<div class="col-lg-6">
+						<label for="#">Ваше имя</label>
+    						<input  class="main-form-input" type="text"></input>
+					</div>
+					<div class="col-lg-6">	<label for="#">Номер телефона</label>
+    						<input class="main-form-input" type="text"></input>
+    					</div>
+				</div>
+    					
+    						<button class="feedback-btn button" type="submit">Оставте заявку</button>
+
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<img class="heand" src="img/feedback/hand.png" alt="heand">
+    </section>
     
 <link rel="stylesheet"  href="slick/slick.css"/>
 <link rel="stylesheet"  href="slick/slick-theme.css"/>
+<link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
   
 <!--Всплывающее окно!-->
 <div class="popup">
@@ -201,6 +317,12 @@
   <script src="slick/slick.min.js"></script>
 
   <script>
+
+  	 $('.feedback-slider').slick({
+  	 	prevArrow:'<button type="button" class="feedback-slider-btn feedback-prev-btn"><img src="img/feedback/ArrowLeft.png" width="40"/></button>',
+  	 	nextArrow:'<button type="button" class="feedback-slider-btn feedback-next-btn"><img src="img/feedback/ArrowRight.png"  width="40"/></button>',
+  	 });
+
   	$(document).ready(function(){
   	$('.popup-btn').on('click', function(event) {
   		event.preventDefault();
