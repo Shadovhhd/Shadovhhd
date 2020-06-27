@@ -34,6 +34,7 @@ a:focus {
   border-radius: 8px;
   text-transform: uppercase;
   border: none ;
+  -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 .button:hover {
@@ -103,7 +104,8 @@ section {
   background-color: white;
   font-size: 1.2rem;
   padding: 0.5rem;
-  transform: translateY(70%);
+  -webkit-transform: translateY(70%);
+          transform: translateY(70%);
 }
 .main-form-btn {
   margin-top: 1rem;
@@ -204,7 +206,8 @@ section {
   position: fixed;
   left: 50%;
   top: 10%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   background-color: white;
   text-align: center;
   padding: 2rem 1rem;
@@ -244,7 +247,8 @@ section {
   text-align: center;
   min-height: 55rem;
   margin-bottom: 4rem;
-  box-shadow: 7px 12px 21px 0px rgba(0, 0, 0, 0.17);
+  -webkit-box-shadow: 7px 12px 21px 0px rgba(0, 0, 0, 0.17);
+          box-shadow: 7px 12px 21px 0px rgba(0, 0, 0, 0.17);
 }
 .prices-block h4 {
   font-family: 'ProximaNova-Bold', sans-serif;
@@ -300,7 +304,8 @@ section {
 }
 .feedback-slider {
   background-color: white;
-  box-shadow: 6px 10px 18px 0px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 6px 10px 18px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 6px 10px 18px 0px rgba(0, 0, 0, 0.5);
   padding: 5rem 6rem;
 }
 .feedback-slider-btn {
@@ -368,6 +373,46 @@ section {
 .media {
   margin-top: 2rem;
 }
+.sheme-section-header h2 {
+  font-family: 'ProximaNova-Bold', sans-serif;
+  font-size: 3.6rem;
+}
+.sheme-section-header p {
+  margin-top: 4rem;
+  font-size: 1.5rem;
+}
+.sheme-content {
+  position: relative;
+}
+.sheme-block {
+  width: 30rem;
+}
+.sheme-block img {
+  padding-bottom: 3em;
+  width: 130px;
+}
+.sheme-block h4 {
+  padding-bottom: 2rem;
+  font-size: 1.5rem;
+  font-family: 'ProximaNova-Bold', sans-serif;
+}
+.sheme-block p {
+  padding-bottom: 2rem;
+  font-size: 1.2rem;
+  width: 23rem;
+}
+.sheme-heand {
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  right: 0;
+  max-width: 60rem;
+}
+@media (max-width: 1200px) {
+  .sheme-heand {
+    max-width: 40rem;
+  }
+}
 @media (max-width: 991px) {
   .main {
     background-position: top right;
@@ -385,10 +430,16 @@ section {
   .feedback-main-p {
     margin-top: 3rem;
   }
+  .sheme-heand {
+    display: none;
+  }
 }
 @media (max-width: 764px) {
   .heand {
     display: none;
+  }
+  .sheme-block p {
+    width: 20rem ;
   }
 }
 @media (max-width: 575px) {
@@ -420,5 +471,11 @@ section {
   .feedback-next-btn {
     right: 0rem;
     background: none;
+  }
+  .sheme {
+    text-align: center;
+  }
+  .sheme-block p {
+    width: 100%;
   }
 }
