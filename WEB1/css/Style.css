@@ -405,13 +405,112 @@ section {
   position: absolute;
   z-index: -1;
   bottom: 0;
-  right: 0;
+  right: -20rem;
   max-width: 60rem;
 }
-@media (max-width: 1200px) {
-  .sheme-heand {
-    max-width: 40rem;
-  }
+.all-inclusive {
+  background: url(img/all-inclusive/back.png) center no-repeat;
+}
+.all-inclusive-header h2 {
+  color: #46b914;
+  font-size: 3.6rem;
+}
+.all-inclusive-header p {
+  margin-top: 4rem;
+  font-size: 1.5rem;
+  margin-bottom: -5rem;
+}
+.all-inclusive-media {
+  padding-left: 1rem;
+  padding-top: 1rem;
+  margin-top: 5rem;
+  font-size: 1.2rem;
+}
+.all-inclusive-media h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: 'ProximaNova-Bold', sans-serif;
+}
+.circle {
+  display: inline-block;
+  background-color: #46b914;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.circle-border {
+  display: inline-block;
+  width: 5rem;
+  height: 5rem;
+  border: 2px solid #46b914;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 4rem;
+  padding: 0.2rem;
+  color: white;
+  font-family: 'ProximaNova-Bold', sans-serif;
+  font-size: 1.9rem;
+  margin-top: 5rem;
+}
+.problems {
+  position: relative;
+}
+.problems-women {
+  position: absolute;
+  width: 28rem;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-60%);
+          transform: translateX(-60%);
+}
+.problems-list {
+  padding: 3rem 3rem;
+  min-height: 31rem;
+}
+.problems-list h4 {
+  font-size: 1.7rem;
+  padding-bottom: 2rem;
+}
+.problems-list ul {
+  list-style-type: none;
+  padding-left: 0rem;
+}
+.problems-list li {
+  font-size: 1.2rem;
+  padding-bottom: 2rem;
+  position: relative;
+  padding-left: 2.5rem;
+}
+.problems-list li:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  width: 1rem;
+  height: 1rem;
+  background-color: black ;
+  background-size: 100%;
+  vertical-align: middle;
+  padding: 1rem 1rem;
+}
+.problems-list-bad {
+  border: 3px solid #e8e8e8;
+}
+.problems-list-bad h4 {
+  opacity: 0.5;
+}
+.problems-list-bad li:before {
+  background: url(../img/problems/cancel.png) center no-repeat;
+  background-size: 80%;
+}
+.problems-list-good {
+  border: 3px solid #46b914;
+}
+.problems-list-good li:before {
+  background: url(../img/problems/checked.png) center no-repeat;
+  background-size: 80%;
 }
 @media (max-width: 991px) {
   .main {
@@ -431,6 +530,9 @@ section {
     margin-top: 3rem;
   }
   .sheme-heand {
+    display: none;
+  }
+  .problems-women {
     display: none;
   }
 }
@@ -477,5 +579,8 @@ section {
   }
   .sheme-block p {
     width: 100%;
+  }
+  .all-inclusive-media {
+    max-width: 20rem;
   }
 }
