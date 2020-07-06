@@ -569,7 +569,35 @@ section{
 		}
 	}
 }
+/*Материалы	*/
+.material{
+	a{
+			color: green;
+			font-size: 1.1rem;
+			border-bottom: 1px dotted green;
+			&:hover{
+				color: darken(green, 5%);
+			}
+		}
+	&-block{
+		text-align: center;
+		h3{
+			padding-bottom:2rem;
+			padding-top:2rem;
+		}
+		p{
+			font-size: 1.2rem;
+			padding-bottom:1rem;
+		}
 
+	}
+	&-footer{
+		p{
+			padding-top:4rem;
+			font-size: 1.4rem;
+		}
+	}
+}
 @media(max-width: 991px){
 	.main{
 		background-position: top right;
