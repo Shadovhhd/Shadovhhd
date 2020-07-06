@@ -607,4 +607,7 @@ section {
   .all-inclusive-media {
     max-width: 20rem;
   }
+  .material a {
+  padding-bottom: 1rem;
+}
 }
