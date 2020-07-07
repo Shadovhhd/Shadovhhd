@@ -69,7 +69,7 @@ section {
   margin-top: 4rem;
   font-size: 1.2rem;
   color: white;
-  background-color: #46b914;
+  background-color: #286b0a;
   text-align: center;
 }
 .main span strong {
@@ -229,7 +229,7 @@ section {
   margin-bottom: -3rem;
 }
 .prices {
-  background: #46b914 url(../img/back-prices.jpg) center;
+  background: #286b0a url(../img/back-prices.jpg) center;
 }
 .prices .section-header_light {
   color: white;
@@ -327,7 +327,7 @@ section {
 }
 .feedback-text {
   position: relative;
-  border: 2px solid #46b914;
+  border: 2px solid #286b0a;
   padding: 1rem 1rem;
   margin-top: 2rem;
   font-style: italic;
@@ -341,7 +341,7 @@ section {
   width: 2rem;
   height: 2.05rem;
   background-color: white;
-  border: 2px solid #46b914;
+  border: 2px solid #286b0a;
   border-bottom: none;
   border-top-right-radius: 100px;
 }
@@ -412,7 +412,7 @@ section {
   background: url(img/all-inclusive/back.png) center no-repeat;
 }
 .all-inclusive-header h2 {
-  color: #46b914;
+  color: #286b0a;
   font-size: 3.6rem;
 }
 .all-inclusive-header p {
@@ -433,7 +433,7 @@ section {
 }
 .circle {
   display: inline-block;
-  background-color: #46b914;
+  background-color: #286b0a;
   width: 100%;
   height: 100%;
   border-radius: 50%;
@@ -442,7 +442,7 @@ section {
   display: inline-block;
   width: 5rem;
   height: 5rem;
-  border: 2px solid #46b914;
+  border: 2px solid #286b0a;
   border-radius: 50%;
   text-align: center;
   line-height: 4rem;
@@ -506,7 +506,7 @@ section {
   background-size: 80%;
 }
 .problems-list-good {
-  border: 3px solid #46b914;
+  border: 3px solid #286b0a;
 }
 .problems-list-good li:before {
   background: url(../img/problems/checked.png) center no-repeat;
@@ -536,6 +536,43 @@ section {
   padding-top: 4rem;
   font-size: 1.4rem;
 }
+.toor {
+  background: url(../img/toor/toor-back.jpg) center no-repeat;
+}
+.toor-content h2 {
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+.toor-content p {
+  padding-top: 3.5rem;
+  font-size: 1.5rem;
+}
+.upsell {
+  background-color: #286b0a;
+}
+.upsell-section-header {
+  color: white;
+}
+.upsell-section-header h2 {
+  font-family: 'ProximaNova-Bold', sans-serif;
+  font-size: 3.6rem;
+}
+.upsell-section-header p {
+  margin-top: 4rem;
+  font-size: 1.5rem;
+}
+.upsell-box {
+  text-align: center;
+}
+.upsell-box img {
+  width: 300px;
+}
+.upsell-box h4 {
+  color: white;
+  font-size: 1.5rem;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
 @media (max-width: 991px) {
   .main {
     background-position: top right;
@@ -558,6 +595,18 @@ section {
   }
   .problems-women {
     display: none;
+  }
+  .toor-content {
+    text-align: center;
+  }
+  .toor-content p {
+    padding-bottom: 3rem;
+  }
+  .upsell-box {
+    text-align: center;
+  }
+  .upsell-box img {
+    padding-top: 2rem;
   }
 }
 @media (max-width: 764px) {
@@ -607,7 +656,4 @@ section {
   .all-inclusive-media {
     max-width: 20rem;
   }
-  .material a {
-  padding-bottom: 1rem;
-}
 }

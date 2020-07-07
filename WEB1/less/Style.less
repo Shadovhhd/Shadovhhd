@@ -25,7 +25,7 @@ font-family: 'ProximaNova-Bold', sans-serif;
 
 /* Colors */
 @btn-color: #f9b002;
-@icon-color: #46b914;
+@icon-color: #286b0a;
 @text-color: #1a1820;
 @danger: #ff0000;
 @bg-light: #f5f5f5;
@@ -598,6 +598,48 @@ section{
 		}
 	}
 }
+.toor{
+	background:url(../img/toor/toor-back.jpg) center no-repeat;
+	&-content{
+		h2{
+			text-transform: uppercase;
+			font-size: 3rem;
+		}
+		p{
+			padding-top:3.5rem;
+			font-size: 1.5rem;
+		}
+	}
+}
+.upsell{
+	background-color: @icon-color;
+	&-section-header{
+		color: white;
+		h2{
+			.bold();
+			font-size: 3.6rem;
+		}
+		p{
+			margin-top: 4rem;
+			font-size: 1.5rem;
+		}
+	}
+	&-box{
+		text-align:center;
+		img{
+			width: 300px;
+		}
+		h4{
+			color: white;
+			font-size: 1.5rem;
+			padding-bottom:2rem;
+			padding-top:2rem;
+		}
+	}
+
+
+	
+}
 @media(max-width: 991px){
 	.main{
 		background-position: top right;
@@ -626,6 +668,23 @@ section{
 .problems{
     &-women{
 	display: none;
+	}
+}
+.toor{
+	&-content{
+		text-align: center;
+		p{
+			padding-bottom:3rem;
+		}
+	}
+}
+.upsell{
+	&-box{
+		text-align:center;
+		img{
+			padding-top:2rem;
+		}
+		
 	}
 }
 }
@@ -690,4 +749,5 @@ section{
 				
 	}
 }
+
 }
