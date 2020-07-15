@@ -1,6 +1,39 @@
 body {
   font-size: 16px;
-  font-family: Arial, sans-serif;
+}
+.section-header {
+  text-align: center;
+}
+.section-header h2 {
+  font-size: 20px;
+  margin-top: 100px;
+}
+.section-header p {
+  margin-top: 30px;
+  font-size: 16px;
+  margin-bottom: 80px;
+}
+.prev {
+  position: absolute;
+  z-index: 99;
+  top: 50%;
+  left: 0;
+  border: none;
+  width: 2rem;
+  height: 2rem;
+  background: url(../img/aboutus/ArrowLeft.png) center no-repeat;
+  background-size: 70%;
+}
+.next {
+  position: absolute;
+  z-index: 99;
+  top: 50%;
+  right: 0;
+  border: none;
+  width: 2rem;
+  height: 2rem;
+  background: url(../img/aboutus/ArrowRight.png) center no-repeat;
+  background-size: 70%;
 }
 /*Header */
 .header {
@@ -61,6 +94,39 @@ body {
   border-radius: 2px;
   -webkit-transition: 3s;
   transition: 3s;
+}
+/*Services*/
+.services {
+  text-align: center;
+}
+.services-block h3 {
+  font-size: 14px;
+  margin-top: 30px;
+  margin-bottom: 25px;
+}
+.services-block p {
+  font-size: 14px;
+  padding-bottom: 100px;
+}
+/*About us*/
+.aboutus {
+  background: url(../img/aboutus/about-bg.png) center no-repeat;
+}
+.aboutus p {
+  font-size: 14px;
+}
+.aboutus-slick {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.aboutus-slick-block {
+  text-align: center;
+}
+.aboutus-slick-block h3 {
+  font-size: 14px;
+}
+.aboutus-slick-block p {
+  font-size: 13px;
 }
 @media (max-width: 764px) {
   .header-logo {
