@@ -168,7 +168,8 @@ body {
   margin-left: 24px;
 }
 .work__nav__btn {
-  border: white;
+  border: none;
+  background: white;
   -webkit-transition: color 0.2s;
   transition: color 0.2s;
 }
