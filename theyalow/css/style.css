@@ -6,7 +6,7 @@ body {
 }
 .section-header h2 {
   font-size: 20px;
-  margin-top: 100px;
+  padding-top: 100px;
 }
 .section-header p {
   margin-top: 30px;
@@ -139,7 +139,7 @@ body {
 }
 .aboutus-slick {
   margin-top: 100px;
-  margin-bottom: 100px;
+  padding-bottom: 100px;
 }
 .aboutus-slick-block {
   text-align: center;
@@ -168,7 +168,7 @@ body {
   margin-left: 24px;
 }
 .work__nav__btn {
-  border: none;
+  border: white;
   -webkit-transition: color 0.2s;
   transition: color 0.2s;
 }
@@ -188,6 +188,9 @@ body {
 }
 .work__block__item {
   margin-bottom: 30px;
+}
+.work__block__item img {
+  width: 340px;
 }
 .work__paralax {
   height: 369px;
@@ -244,6 +247,6 @@ body {
     margin-left: 0px;
   }
   .work__paralax_red p {
-    font-size: 25px;
+    font-size: 20px;
   }
 }
