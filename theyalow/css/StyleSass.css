@@ -245,6 +245,28 @@ a {
     transition: all 0.2s; }
     .post__block-item span:hover {
       font-size: 18px; }
+.post__client {
+  background: url(img/post/back.png);
+  height: 477px;
+  margin-top: 100px;
+  text-align: center; }
+  .post__client-compani {
+    line-height: 120px;
+    padding-top: 50px;
+    padding-bottom: 70px; }
+    .post__client-compani img {
+      vertical-align: middle; }
+  .post__client p {
+    font-family: serif;
+    color: #555555;
+    font-size: 18px;
+    font-style: italic; }
+  .post__client h4 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #555555;
+    font-size: 20px;
+    font-weight: 400; }
 
 @media (max-width: 1200px) {
   .post__block img {
@@ -286,6 +308,9 @@ a {
     margin-left: 0px; }
 
   .post__block-item blockquote {
-    margin-left: 0px; } }
+    margin-left: 0px; }
+
+  .post__block img {
+    width: 350px; } }
 
 /*# sourceMappingURL=StyleSass.css.map */
