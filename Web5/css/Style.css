@@ -112,6 +112,9 @@ button {
     text-align: center; }
 
   .header__bottom button {
-    margin-bottom: 150px; } }
+    margin-bottom: 150px; }
+
+  .header__bottom {
+    margin-top: 100px; } }
 
 /*# sourceMappingURL=Style.css.map */
