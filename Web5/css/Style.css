@@ -103,10 +103,121 @@ button {
 
   .header__bottom button {
     margin-bottom: 120px; } }
+.about {
+  margin-top: 90px;
+  margin-bottom: 110px; }
+  .about__content h2 {
+    margin-bottom: 30px;
+    text-align: center;
+    color: #545454;
+    font-family: Georgia;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 45px;
+    letter-spacing: 2.1px; }
+  .about__content p {
+    color: #4c4c4c;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px; }
+
+.friend {
+  background: url(../img/header/Background1.png); }
+  .friend__header {
+    text-align: center; }
+    .friend__header h2 {
+      padding-top: 60px;
+      margin-bottom: 80px;
+      color: #545454;
+      font-family: Georgia;
+      font-size: 35px;
+      font-weight: 400;
+      line-height: 45px;
+      letter-spacing: 2.1px; }
+  .friend__block {
+    text-align: center;
+    margin-left: 50px;
+    border-radius: 26px;
+    border: 2px solid #f1cdb3; }
+    .friend__block-photo {
+      height: 270px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px; }
+    .friend__block h4 {
+      color: #545454;
+      font-family: Georgia;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 45px;
+      /* Text style for "J, ennifer" */
+      letter-spacing: 1.2px; }
+    .friend__block button {
+      padding: 10px 20px;
+      margin-bottom: 25px;
+      color: #292929;
+      font-family: Georgia;
+      font-size: 17px;
+      font-weight: 400;
+      letter-spacing: 1.02px;
+      border-radius: 26px;
+      border: 2px solid #f1cdb3;
+      transition: all .2s; }
+      .friend__block button:hover {
+        background-color: #f1cdb3; }
+  .friend__slick {
+    margin-bottom: 100px; }
+  .friend__bottom {
+    text-align: center; }
+    .friend__bottom button {
+      margin-bottom: 50px;
+      padding: 10px 25px;
+      text-align: center;
+      color: #292929;
+      font-family: Georgia;
+      font-size: 17px;
+      font-weight: 400;
+      letter-spacing: 1.02px;
+      border-radius: 26px;
+      border: 2px solid #f1cdb3;
+      background-color: #f1cdb3;
+      transition: all .2s; }
+      .friend__bottom button:hover {
+        border-color: #e9b188; }
+
+.help__header {
+  margin-top: 100px;
+  margin-bottom: 60px;
+  text-align: center; }
+  .help__header h2 {
+    color: #545454;
+    font-family: Georgia;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 45px;
+    /* Text style for "T, han you" */
+    letter-spacing: 2.1px; }
+.help__content {
+  text-align: center; }
+  .help__content h3 {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    color: #545454;
+    font-family: Georgia;
+    font-size: 13px;
+    font-weight: 400;
+    /* Text style for "T, oys" */
+    letter-spacing: 1.2p; }
+
 @media (max-width: 992px) {
   .header__dog {
     width: 100%;
-    display: none; } }
+    display: none; }
+
+  .about__content {
+    text-align: center; } }
 @media (max-width: 570px) {
   .header {
     text-align: center; }
@@ -115,6 +226,9 @@ button {
     margin-bottom: 150px; }
 
   .header__bottom {
-    margin-top: 100px; } }
+    margin-top: 100px; }
+
+  .friend__block {
+    margin-left: 0px; } }
 
 /*# sourceMappingURL=Style.css.map */
