@@ -106,52 +106,364 @@ button {
             border-radius: 26px;
             background-color: #f1cdb3;
             transition: all 0.2s;
-            &:hover{
+
+            &:hover {
                 background-color: darken($color: #f1cdb3, $amount: 10%);
             }
 
         }
     }
-    &__dog{
-        position:absolute;
+
+    &__dog {
+        position: absolute;
         width: 700px;
         z-index: 0;
         top: -38%;
         left: 14%;
     }
 }
-@media(max-width: 1200px){
+
+@media(max-width: 1200px) {
     .header__top h1 {
         font-size: 20px;
     }
+
     .header__top p {
         font-size: 8px;
     }
+
     .header__top li {
         margin-right: 15px;
     }
+
     .header__dog {
         width: 100%;
-        left: 13%; 
+        left: 13%;
         top: -16%;
     }
+
     .header__bottom button {
         margin-bottom: 120px;
     }
 }
-@media(max-width: 992px){
+
+.about {
+    margin-top: 90px;
+    margin-bottom: 110px;
+
+    &__content {
+        h2 {
+            margin-bottom: 30px;
+            text-align: center;
+            color: #545454;
+            font-family: Georgia;
+            font-size: 35px;
+            font-weight: 400;
+            line-height: 45px;
+            letter-spacing: 2.1px;
+        }
+
+        p {
+            color: #4c4c4c;
+            font-family: Arial;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 24px;
+        }
+    }
+}
+
+.friend {
+    background: url(../img/header/Background1.png);
+
+    &__header {
+        text-align: center;
+
+        h2 {
+            padding-top: 60px;
+            margin-bottom: 80px;
+            color: #545454;
+            font-family: Georgia;
+            font-size: 35px;
+            font-weight: 400;
+            line-height: 45px;
+            letter-spacing: 2.1px;
+        }
+    }
+
+    &__block {
+        text-align: center;
+        margin-left: 50px;
+        border-radius: 26px;
+        border: 2px solid #f1cdb3;
+
+
+        &-photo {
+            height: 270px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        h4 {
+            color: #545454;
+            font-family: Georgia;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 45px;
+            /* Text style for "J, ennifer" */
+            letter-spacing: 1.2px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin-bottom: 25px;
+            color: #292929;
+            font-family: Georgia;
+            font-size: 17px;
+            font-weight: 400;
+            letter-spacing: 1.02px;
+            border-radius: 26px;
+            border: 2px solid #f1cdb3;
+            transition: all .2s;
+
+            &:hover {
+                background-color: #f1cdb3;
+
+            }
+        }
+
+    }
+
+    &__slick {
+        margin-bottom: 100px;
+    }
+
+    &__bottom {
+        text-align: center;
+
+        button {
+            margin-bottom: 50px;
+            padding: 10px 25px;
+            text-align: center;
+            color: #292929;
+            font-family: Georgia;
+            font-size: 17px;
+            font-weight: 400;
+            letter-spacing: 1.02px;
+            border-radius: 26px;
+            border: 2px solid #f1cdb3;
+            background-color: #f1cdb3;
+            transition: all .2s;
+
+            &:hover {
+                border-color: darken($color: #f1cdb3, $amount: 10%);
+            }
+        }
+    }
+}
+
+.help {
+    &__header {
+        margin-top: 100px;
+        margin-bottom: 60px;
+        text-align: center;
+
+        h2 {
+            color: #545454;
+            font-family: Georgia;
+            font-size: 35px;
+            font-weight: 400;
+            line-height: 45px;
+            /* Text style for "T, han you" */
+            letter-spacing: 2.1px;
+        }
+    }
+
+    &__content {
+        text-align: center;
+
+        h3 {
+            margin-top: 20px;
+            margin-bottom: 50px;
+            color: #545454;
+            font-family: Georgia;
+            font-size: 13px;
+            font-weight: 400;
+            /* Text style for "T, oys" */
+            letter-spacing: 1.2p
+        }
+    }
+}
+
+.donat {
+    margin-top: 150px;
+    margin-bottom: 80px;
+
+    &__content {
+        h2 {
+            margin-bottom: 35px;
+            font-size: 35px;
+            letter-spacing: 2px;
+            line-height: 45px;
+            color: #545454;
+            font-family: "Georgia";
+
+        }
+
+        p {
+            margin-bottom: 13px;
+            font-size: 15px;
+            letter-spacing: 1px;
+            color: #545454;
+            font-family: "Georgia";
+        }
+
+        small {
+            width: 387px;
+            height: 473px;
+            font-size: 12px;
+            line-height: 18px;
+            color: #b2b2b2;
+            font-style: italic;
+            font-family: "Arial";
+        }
+    }
+
+    &__cards {
+        position: relative;
+        margin-bottom: 33px;
+        width: 280px;
+        padding: 2px 15px;
+        border-radius: 9px;
+        background-color: #f1cdb3;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 2.25;
+        letter-spacing: 1.2px;
+        text-align: right;
+        color: #292929;
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 30px;
+            height: 22px;
+            background: url(../img/credit-card.png) center no-repeat;
+            background-size: 100%;
+            top: 8px;
+            left: 10px;
+        }
+    }
+
+}
+
+.footer {
+    background: url(../img/footer/footer-back.png);
+
+    h2 {
+        margin-top: 50px;
+        margin-bottom: 25px;
+        font-family: Georgia;
+        font-size: 30px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        letter-spacing: 2.1px;
+        color: #ffffff;
+
+    }
+
+    p {
+        font-family: TimesNewRomanPSMT;
+        margin-left: 40px;
+        font-size: 15px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        letter-spacing: 1.2px;
+        color: #f1cdb3;
+    }
+
+    &__number {
+        position: relative;
+        padding-top: 22px;
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 24px;
+            height: 33px;
+            background: url(../img/footer/telephone.png) center no-repeat;
+            background-size: 100%;
+            top: 15px;
+            left: -30px;
+        }
+    }
+    &__email{
+        position: relative;
+        &::after{
+            content: "";
+            position: absolute;
+            width: 24px;
+            height: 33px;
+            background: url(../img/footer/envelope.png) center no-repeat;
+            background-size: 100%;
+            top: -5px;
+            left:-30px;
+        }
+    }
+
+    &__position {
+        p {
+            position: relative;
+
+            &::after {
+                content: "";
+                position: absolute;
+                width: 24px;
+                height: 33px;
+                background: url(../img/footer/pin.png) center no-repeat;
+                background-size: 70%;
+                top: -5px;
+                left: -40px;
+            }
+        }
+    }
+}
+
+@media(max-width: 992px) {
     .header__dog {
         width: 100%;
         display: none;
-    } 
+    }
+
+    .about__content {
+        text-align: center;
+    }
 }
-@media(max-width: 570px){
+
+@media(max-width: 570px) {
     .header {
         text-align: center;
     }
+
     .header__bottom button {
         margin-bottom: 150px;
     }
+
     .header__bottom {
-        margin-top: 100px; }
+        margin-top: 100px;
+    }
+
+    .friend__block {
+        margin-left: 0px;
+    }
+    .donat__content img{
+        width: 100%;
+    }
 }
