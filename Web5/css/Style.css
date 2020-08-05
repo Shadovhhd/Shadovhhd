@@ -211,6 +211,112 @@ button {
     /* Text style for "T, oys" */
     letter-spacing: 1.2p; }
 
+.donat {
+  margin-top: 150px;
+  margin-bottom: 80px; }
+  .donat__content h2 {
+    margin-bottom: 35px;
+    font-size: 35px;
+    letter-spacing: 2px;
+    line-height: 45px;
+    color: #545454;
+    font-family: "Georgia"; }
+  .donat__content p {
+    margin-bottom: 13px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: #545454;
+    font-family: "Georgia"; }
+  .donat__content small {
+    width: 387px;
+    height: 473px;
+    font-size: 12px;
+    line-height: 18px;
+    color: #b2b2b2;
+    font-style: italic;
+    font-family: "Arial"; }
+  .donat__cards {
+    position: relative;
+    margin-bottom: 33px;
+    width: 280px;
+    padding: 2px 15px;
+    border-radius: 9px;
+    background-color: #f1cdb3;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.25;
+    letter-spacing: 1.2px;
+    text-align: right;
+    color: #292929; }
+    .donat__cards::after {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 22px;
+      background: url(../img/credit-card.png) center no-repeat;
+      background-size: 100%;
+      top: 8px;
+      left: 10px; }
+
+.footer {
+  background: url(../img/footer/footer-back.png); }
+  .footer h2 {
+    margin-top: 50px;
+    margin-bottom: 25px;
+    font-family: Georgia;
+    font-size: 30px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: 2.1px;
+    color: #ffffff; }
+  .footer p {
+    font-family: TimesNewRomanPSMT;
+    margin-left: 40px;
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: 1.2px;
+    color: #f1cdb3; }
+  .footer__number {
+    position: relative;
+    padding-top: 22px; }
+    .footer__number::after {
+      content: "";
+      position: absolute;
+      width: 24px;
+      height: 33px;
+      background: url(../img/footer/telephone.png) center no-repeat;
+      background-size: 100%;
+      top: 15px;
+      left: -30px; }
+  .footer__email {
+    position: relative; }
+    .footer__email::after {
+      content: "";
+      position: absolute;
+      width: 24px;
+      height: 33px;
+      background: url(../img/footer/envelope.png) center no-repeat;
+      background-size: 100%;
+      top: -5px;
+      left: -30px; }
+  .footer__position p {
+    position: relative; }
+    .footer__position p::after {
+      content: "";
+      position: absolute;
+      width: 24px;
+      height: 33px;
+      background: url(../img/footer/pin.png) center no-repeat;
+      background-size: 70%;
+      top: -5px;
+      left: -40px; }
+
 @media (max-width: 992px) {
   .header__dog {
     width: 100%;
@@ -229,6 +335,9 @@ button {
     margin-top: 100px; }
 
   .friend__block {
-    margin-left: 0px; } }
+    margin-left: 0px; }
+
+  .donat__content img {
+    width: 100%; } }
 
 /*# sourceMappingURL=Style.css.map */
