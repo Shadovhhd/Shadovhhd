@@ -1,0 +1,236 @@
+@font-face {
+  font-family: 'Proxima Nova';
+  src: local("Proxima Nova Regular"), local("Proxima-Nova-Regular"), url("../font/ProximaNova-Regular.woff2") format("woff2"), url("../font/ProximaNova-Regular.woff") format("woff"), url("../font/ProximaNova-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-family: 'ForeverBrushScript';
+  src: url("../font/ForeverBrushScript.woff") format("woff"), url("../font/ForeverBrushScript.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+body {
+  font-family: 'Proxima Nova'; }
+
+a:hover {
+  text-decoration: none; }
+
+.section-header {
+  text-align: center; }
+  .section-header h2 {
+    position: relative;
+    margin-bottom: 70px;
+    font-family: ForeverBrushScript;
+    font-size: 56px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.57;
+    letter-spacing: normal;
+    color: #ffffff; }
+    .section-header h2::after {
+      content: "";
+      position: absolute;
+      width: 108px;
+      height: 2px;
+      background-color: white;
+      bottom: -30px;
+      left: 50%;
+      transform: translateX(-50%); }
+
+.header {
+  min-height: 950px;
+  background: url(../img/header/bg_banner_2641.png) center no-repeat; }
+  .header__top {
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-self: center; }
+    .header__top h2 {
+      font-family: 'Proxima Nova';
+      font-size: 31px;
+      font-weight: 100;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.03;
+      letter-spacing: normal;
+      color: #ffffff; }
+    .header__top ul,
+    .header__top li {
+      list-style-type: none;
+      margin: 0px 0px;
+      padding: 0px 0px; }
+    .header__top li {
+      display: inline-block;
+      margin-left: 50px;
+      font-size: 16px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: left; }
+      @media (max-width: 1024px) {
+        .header__top li {
+          margin-left: 25px; } }
+      .header__top li a {
+        color: #ffffff;
+        transition: all .2s; }
+        .header__top li a:hover {
+          padding-bottom: 5px;
+          border-bottom: 2px solid white; }
+  .header__bottom {
+    width: 713px;
+    margin: auto;
+    text-align: center; }
+    .header__bottom h1 {
+      margin-top: 300px;
+      margin-bottom: 50px;
+      font-size: 72px;
+      font-weight: 100;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 0.44;
+      letter-spacing: normal;
+      color: #ffffff; }
+      @media (max-width: 768px) {
+        .header__bottom h1 {
+          font-size: 50px; } }
+      @media (max-width: 400px) {
+        .header__bottom h1 {
+          font-size: 40px; } }
+    .header__bottom p {
+      font-size: 18px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.78;
+      letter-spacing: normal;
+      text-align: center;
+      color: #ffffff; }
+      @media (max-width: 768px) {
+        .header__bottom p {
+          font-size: 14px; } }
+
+.story {
+  background: url(../img/bg_2676.png) center;
+  min-height: 642px; }
+  .story__content {
+    min-height: 642px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; }
+  .story__image {
+    flex-basis: 50%; }
+    @media (max-width: 1200px) {
+      .story__image {
+        text-align: center;
+        flex: 1 1 100%;
+        margin-top: 20px;
+        margin-bottom: 30px; } }
+  .story__text {
+    flex-basis: 50%; }
+    @media (max-width: 1200px) {
+      .story__text {
+        flex: 1 1 100%; } }
+    .story__text-container {
+      width: 508px;
+      margin: 0 auto;
+      text-align: center; }
+      .story__text-container p {
+        font-size: 18px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.78;
+        letter-spacing: normal;
+        color: #ffffff; }
+
+.recipes {
+  background: url(../img/bg_2679.png) center;
+  min-height: 483px; }
+  .recipes-header {
+    padding-top: 130px; }
+    .recipes-header h2::after {
+      background-color: #c8235d; }
+  .recipes__content {
+    width: 508px;
+    margin: auto;
+    text-align: center; }
+    .recipes__content p {
+      margin-top: 80px;
+      font-size: 18px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.78;
+      letter-spacing: normal;
+      color: #ffffff; }
+
+@media (max-width: 768px) {
+  .header__top li {
+    display: block;
+    margin-top: 10px; }
+
+  .header__burger {
+    display: none;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 20px;
+    top: 50px; }
+    .header__burger span {
+      position: relative;
+      display: block;
+      width: 30px;
+      height: 3px;
+      background-color: white; }
+      .header__burger span::before {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 30px;
+        height: 3px;
+        background-color: white;
+        top: 10px; }
+      .header__burger span::after {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 30px;
+        height: 3px;
+        background-color: white;
+        bottom: 10px; }
+
+  .header__bottom {
+    width: 100%; }
+
+  .header__burger.active span {
+    background-color: transparent; }
+    .header__burger.active span::after {
+      transform: rotate(45deg);
+      top: 0; }
+    .header__burger.active span::before {
+      transform: rotate(-45deg);
+      top: 0; } }
+@media (max-width: 550px) {
+  .story__text-container {
+    width: 100%; }
+
+  .story__image img {
+    width: 100%; }
+
+  .recipes__content {
+    width: 100%; }
+
+  .recipes-header {
+    padding-top: 70px; }
+    .recipes-header h2 {
+      line-height: 1; }
+
+  .recipes__content p {
+    margin-top: 30px;
+    font-size: 15px;
+    padding-bottom: 20px; } }
+
+/*# sourceMappingURL=style.css.map */
