@@ -19,6 +19,7 @@
 
 body {
     font-family: 'Proxima Nova';
+    overflow-x: hidden;
 }
 
 a {
@@ -313,28 +314,229 @@ a {
 .photo {
 
     min-height: 365px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 
     &__block-1 {
         min-height: 365px;
         background: url(../img/photo/replace_image1_2818.png) center no-repeat;
         background-size: 100%;
-      
+        width: 33.333%;
     }
 
     &__block-2 {
         min-height: 365px;
         background: url(../img/photo/replace_image_2810.png) center no-repeat;
         background-size: 100%;
-      
+        width: 33.333%;
     }
 
     &__block-3 {
         min-height: 365px;
         background: url(../img/photo/replace_image_2814.png) center no-repeat;
         background-size: 100%;
-    
+        width: 33.333%;
     }
 }
+
+.more {
+    background-color: #25262a;
+    width: 100%;
+    min-height: 322px;
+    margin: 0;
+
+    &_content {
+        text-align: center;
+        margin: 0;
+        min-height: 322px;
+        padding-top: 70px;
+
+        &-res {
+            width: 30%;
+
+            h3 {
+                margin-bottom: 47px;
+                font-size: 26px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 0.92;
+                letter-spacing: normal;
+                color: #ffffff;
+            }
+
+            p {
+                width: 200px;
+                margin: 0 auto;
+                font-family: 'Roboto', sans-serif;
+                font-size: 14px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.71;
+                letter-spacing: normal;
+                text-align: left;
+                color: #ffffff;
+            }
+        }
+
+        &-block {
+
+            h3 {
+                margin-bottom: 47px;
+                font-family: 'Roboto', sans-serif;
+                font-size: 18px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.78;
+                letter-spacing: normal;
+                color: #ffffff;
+            }
+
+            ul,
+            li {
+
+                list-style-type: none;
+                padding: 0;
+            }
+
+            li {
+
+                font-family: 'Roboto', sans-serif;
+                font-size: 14px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 2.29;
+                letter-spacing: normal;
+                color: #ffffff;
+            }
+        }
+
+        &-contact {
+
+            h3 {
+                margin-bottom: 53px;
+                font-family: 'Roboto', sans-serif;
+                font-size: 18px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                letter-spacing: normal;
+                color: #ffffff;
+            }
+
+            ul,
+            li {
+                font-family: 'Roboto', sans-serif;
+                list-style-type: none;
+                padding: 0;
+            }
+
+            li {
+                width: 120px;
+                margin: 0 auto;
+                position: relative;
+                font-size: 14px;
+                font-weight: bold;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 2.29;
+                letter-spacing: normal;
+                text-align: left;
+                color: #ffffff;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    width: 16px;
+                    height: 15px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: -20px;
+                }
+            }
+
+            .contact-number {
+                &::after {
+                    background: url(../img/footer/__1111.png) center no-repeat;
+                }
+            }
+
+            .contact-adres {
+                &::after {
+                    background: url(../img/footer/__1112.png) center no-repeat;
+                }
+
+            }
+
+            .contact-mail {
+                &::after {
+                    background: url(../img/footer/__1113.png) center no-repeat;
+                }
+
+            }
+        }
+
+    }
+}
+
+.footer {
+    min-height: 122px;
+    background-color: #16171b;
+
+    &__content {
+        min-height: 122px;
+        display: flex; 
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__develop {
+        flex: 0 0 30%;
+
+        h3 {
+            font-size: 16px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.5;
+            letter-spacing: 1.6px;
+            color: rgba(222, 212, 253, 0.5);
+        }
+    }
+
+    &__more {
+        flex: 0 0 40%;
+
+        a {
+            margin: 0;
+            margin-left: 20px;
+            padding: 0;
+            font-size: 16px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.5;
+            letter-spacing: 1.6px;
+            text-align: center;
+            color: rgba(222, 212, 253, 0.5);
+        }
+    }
+
+    &__social {
+        flex: 0 0 30%;
+
+        img {
+            margin-left: 20px;
+        }
+    }
+}
+
+@media(max-width:1024px) {}
 
 @media(max-width:768px) {
     .header__top li {
@@ -400,6 +602,19 @@ a {
             }
         }
     }
+
+    .footer__develop {
+        text-align: center;
+        flex: 1 1 100%;
+    }
+
+    .footer__more {
+        flex: 1 1 50%;
+    }
+
+    .footer__social {
+        flex: 1 1 50%;
+    }
 }
 
 @media(max-width:550px) {
@@ -438,8 +653,27 @@ a {
     .menu__content .menu__slick-item-block .slick__header h3 {
         font-size: 15px;
     }
-    .photo{
+
+    .photo {
         text-align: center;
+    }
+    .footer__develop {
+        text-align: center;
+        flex: 1 1 100%;
+    }
+
+    .footer__more {
+        text-align: center;
+        a{
+            font-size: 10px;
+        }
+        flex: 1 1 100%;
+    }
+
+    .footer__social {
+        
+        text-align: center;
+        flex: 1 1 100%;
     }
 
 }
