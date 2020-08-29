@@ -536,7 +536,10 @@ ul {
 
   .footer__inner {
     display: block;
-    text-align: center; } }
+    text-align: center; }
+
+  .header {
+    height: 450px; } }
 @media (min-width: 570px) {
   .nav__list {
     display: flex !important; }

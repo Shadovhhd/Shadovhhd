@@ -653,6 +653,10 @@ ul {
     display: block;
     text-align: center;
   }
+
+  .header {
+    height: 450px;
+  }
 }
 @media (min-width: 570px) {
   .nav__list {
